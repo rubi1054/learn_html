@@ -30,3 +30,11 @@ h1{
 h2{
     color: blue;
 }
+
+.smile_list{
+    list-style-type: "\1F338";
+}
+
+.no_markers_list{
+    list-style: none;
+}
