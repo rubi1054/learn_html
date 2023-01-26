@@ -1,8 +1,26 @@
+/*
 p{
     color:green;
     font-size: 14px;
 }
- 
+ */
+
+.text_mark{
+font-weight: bold;
+font-style: italic;
+color:yellow;
+background-color: aqua;
+}
+
+.red_text{
+    color: red;
+}
+
+
+ #green{
+    color: green;
+    font-size: 20px;
+ }
 
 h1{
     color: red;
@@ -11,9 +29,4 @@ h1{
 
 h2{
     color: blue;
-}
-
-
-h3{
-    color: blueviolet;
 }
