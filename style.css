@@ -1,47 +1,30 @@
-/*"коробка", "контейнер", "блочный элемент
-у нее есть ширина и высота"*/
-*{
-    box-sizing: border-box;
-}
-
-.div1{
-    margin: 0px;
-    padding: 0px;
-    background-color: chartreuse;
-}
-
-.inner_div{
-    background-color:magenta;
-    height: 50px;
-    /*font-size: 0;*/
-}
-
-.yellow_div{
-    background-color: yellow;
-    height: 30px;
-    width: inherit;
-    font-size: 7px;
-}
 
 
 div{
-    color: white;
-    font-weight: bold;
-    background-color: green;
-    /*border: 2px solid red;*/
-    width: 200px;
-    /*height: 50px;*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    margin: 10px;
 }
 
-/*"строчный элемент"*/
-span{
-    color: white;
-    font-weight: bold;
-    background-color: blue;
-    border: 2px solid red;
-    width: 200px;
+.box2{
+    margin-left: 30px;
+    margin-top: -30px;
+    background-color: magenta;
+}
+
+.box3{
+    margin-left: -30px;
+}
+
+.child{
+    width: 20px;
     height: 50px;
+    margin: 5px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.box4{
+    margin-left: 40px;
 }
