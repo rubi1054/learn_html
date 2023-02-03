@@ -1,0 +1,49 @@
+body{
+    background-color: aquamarine;
+}
+.userCardContainer{
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.buttonFollow{
+    width: 20ex;
+    height: 50px;
+    background-color: deepskyblue;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-position: center center;
+}
+
+.fullname{
+    font-size: 30px;
+}
+
+.useAbout{
+    font-size: 14px;
+}
+
+.statTitle{
+    color: red;
+    font-size: 10px;
+}
+
+.statValue{
+    color: lightblue;
+    font-size: 10px;
+}
+
+.stats{
+    background-color: black;
+}
+
+.statItem{
+    display: inline-block;
+}
+
+
