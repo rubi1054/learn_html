@@ -1,29 +1,67 @@
-.text_about{
-    font-style: italic;
-}
 /*
-.plane{
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
     display: block;
-    width: 800px;
-    height: 500px;
+}
+
+.style_box{
+    background-color: cornflowerblue;
+}
+
+img{
+    display: block;
     border: 2px solid grey;
+ 
+}
+
+.image_system  img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 5px solid red;
+
 }
 */
-
-.img_plane{
-    width: 800px;
-    height: 500px;
-    border: 2px solid grey;
-}
 
 /*
-img{
-    width: inherit;
-    height: inherit;
+.box1{
+    display: inline;
 }
 */
 
-.img_plane > img{
-    width: inherit;
-    height: inherit;
+.test_selectors{
+    border: 2px solid red;
+    width: 500px;
+}
+
+
+.test_selectors p{
+    color: blue;
+}
+
+/*первый уровень вложенности*/
+.test_selectors > p{
+    color: red;
+}
+*/
+
+
+/*Правило для параграфа у которого родитель имеет класс test*/
+/*
+    <div class="test">
+        <p>....</p>
+    </div>
+*/
+.test p{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+}
+
+/*Правило для ребенка-параграфа <p> у которого родитель имеет класс test*/
+/*<p class="test">*/
+p.test{
+    background-color: yellow;
 }
