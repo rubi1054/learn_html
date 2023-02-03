@@ -45,7 +45,7 @@ img{
 .test_selectors > p{
     color: red;
 }
-*/
+
 
 
 /*Правило для параграфа у которого родитель имеет класс test*/
@@ -54,7 +54,7 @@ img{
         <p>....</p>
     </div>
 */
-.test p{
+.test p {
     background-color: blue;
     color: white;
     font-size: 30px;
