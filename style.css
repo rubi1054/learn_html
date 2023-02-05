@@ -49,61 +49,52 @@ body{
 */
 
 
-*{
-    padding: 0;
-    margin: 0;
-}
 
-/*100% - 100% от родителя
-vh - viewport height
-100vh - 100 области вьюпорта по высоте
-100vw - 100 области вьюпорта по ширине
-ширину%, высоту vh*/
+/*positions
+difault - static
+доступны свойства top, bottom, left, right для всех свойств кроме static
+*/
 
-body{
-    background-image: url("https://www.surfertoday.com/images/jamp/page/beach-quotes.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
 
-.header{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
-
-.header > p{
-    margin: top 20px;
-    margin-bottom: 20px;
-}
-
-.btn{
-    border: 2px solid blue;
+.box{
     width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    margin-left: 800px;
+    height: 200px;
 }
 
-.btn > p{
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-transform: capitalize;
-    text-align: center;
-    padding: 0px;
-    margin: 15px;
-    background-color: lightskyblue;
+.box1{
+    background-color: cornflowerblue;
+    position:relative;
+    top:30px;
+    left:50px;
 }
 
-.section1{
-    background-color: blue;
-    color: white;
+.box2{
+    background-color: green;
 }
 
-.section2{
-    background-color: white;
-    color: blue;
+.box3{
+   background-color: rgba(0,0,255,0.4); 
+   
 }
+
+.child1{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+}
+
+.child2{
+    width: 80px;
+    height: 80px;
+    background-color: magenta;
+}
+
+/*
+static (по умолчанию) и элемент не сдвигается. У него нет свойств top, bottom. right, left.
+relative - элемент сдвигается относительно самого себя. А остальные элементы как стояли на своем месте, так там и остались.
+absolute - элемент сдвигается относительно ближайшего родителя (надо смотреть кто родитель, если родителя нету - то относительно body), а остальные элементы не видят его и становятся с начала контейнера родителя. Родитель должен быть не в статике (хотя бы relative)!
+fixed - элемент сдвигается относительно области просмотра (viewport). Несмотря на скролинг странички, такой элемент останется на том же месте на экране. Других элементов не замечает. Другие элементы его не видят и становятся в начало.
+*/
