@@ -48,53 +48,114 @@ body{
 }
 */
 
-
-
-/*positions
-difault - static
-доступны свойства top, bottom, left, right для всех свойств кроме static
-*/
-
-
-.box{
-    width: 200px;
-    height: 200px;
-}
-
-.box1{
-    background-color: cornflowerblue;
-    position:relative;
-    top:30px;
-    left:50px;
-}
-
-.box2{
-    background-color: green;
-}
-
-.box3{
-   background-color: rgba(0,0,255,0.4); 
-   
-}
-
-.child1{
-    width: 80px;
-    height: 80px;
-    background-color: yellow;
-    position: fixed;
-    top: 20px;
-    left: 50px;
-}
-
-.child2{
-    width: 80px;
-    height: 80px;
-    background-color: magenta;
-}
-
 /*
-static (по умолчанию) и элемент не сдвигается. У него нет свойств top, bottom. right, left.
-relative - элемент сдвигается относительно самого себя. А остальные элементы как стояли на своем месте, так там и остались.
-absolute - элемент сдвигается относительно ближайшего родителя (надо смотреть кто родитель, если родителя нету - то относительно body), а остальные элементы не видят его и становятся с начала контейнера родителя. Родитель должен быть не в статике (хотя бы relative)!
-fixed - элемент сдвигается относительно области просмотра (viewport). Несмотря на скролинг странички, такой элемент останется на том же месте на экране. Других элементов не замечает. Другие элементы его не видят и становятся в начало.
+.card{
+width: 200px;
+height: 140px;
+background-color: pink;
+border-radius: 5px;
+position: relative;
+background: linear-gradient(to right,peachpuff, pink);
+}
+.text{
+color: white;
+font-size: 13px;
+text-transform:capitalize;
+position: absolute;
+left: 25px;
+top: 15px;
+}
+
+.numbers{
+color: white;
+font-size: 20px;
+font-weight: 500;
+position: absolute;
+left: 25px;
+top: 25px;
+}
+.info{
+color: white;
+font-size: 10px;
+position: absolute;
+left: 25px;
+top: 90px;
+}
+
+.circle1{
+width: 130px;
+height: 130px;
+background-color: rgba(255,255,255,0.3);
+border-radius: 50%;
+position:absolute;
+top: 55%;
+right: -10%;
+}
+
+.circle2{
+width: 115px;
+height: 115px;
+background-color: rgba(255,255,255,0.3);
+border-radius: 50%;
+position:absolute;
+top: -5%;
+left: 70%;
+}
 */
+
+body{
+    background-color: bisque;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    width: 400px;
+    height: 300px;
+    background-color: deeppink;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.circle1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    position: relative;
+    bottom: 250px;
+    left: 200px;
+    z-index: 2;
+
+}
+
+.circle2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255,0,0.8);
+    position: relative;
+    left: 160px;
+    top: -350px;
+    z-index: 2;
+}
+
+.info{
+    padding-top: 50px;
+}
+
+.info > h3{
+    padding-top: 50px;
+} 
+.info > h1{
+    padding-top: 20px;
+} 
+.info > h5{
+    padding-top: 40px;
+} 
