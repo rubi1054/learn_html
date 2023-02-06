@@ -115,7 +115,7 @@ body{
 .card{
     width: 400px;
     height: 300px;
-    background-color: deeppink;
+    background-image: linear-gradient(to bottom left, rgba(20, 255, 79, 0.7), rgb(241, 255, 50));
     color: white;
     position: relative;
     margin: 0 auto;
@@ -141,8 +141,8 @@ body{
     border-radius: 50%;
     background-color: rgba(255, 255,0,0.8);
     position: absolute;
-    left: 150px;
     /*top: 120px;*/
+    right: -100px;
     bottom: -120px;
     z-index: 2;
 }
