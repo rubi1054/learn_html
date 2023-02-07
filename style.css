@@ -103,6 +103,12 @@ left: 70%;
 }
 */
 
+:root{
+    --card-width: 350px;
+    --card-height: 250px;
+    --main-color: white;
+    --second-color: gold;
+}
 
 body{
     background-color: bisque;
@@ -124,20 +130,26 @@ li{
 
 .card1{
     background-image: linear-gradient(to bottom left, rgba(255, 20, 255, 0.7), rgb(255, 98, 50));
-}
+} 
 
 .card2{
-    background-image: linear-gradient(deepskyblue, blue);
-}
+    background-image: linear-gradient(120deg,deepskyblue, blue);
+} 
 
 .card3{
-    background-image: linear-gradient(greenyellow, green);
+    background-image: linear-gradient(120deg,greenyellow, green);
+} 
+
+
+li + li {
+ margin-left: 20px;   
+ border-left: 5px dotted blue;
 }
 
 .card{
-    width: 400px;
-    height: 300px;
-    color: white;
+    width: var(--card-width);
+    height: var(--card-height);
+    color: var(--main-color);
     position: relative;
     margin: 0 auto;
     overflow: hidden;
@@ -145,40 +157,44 @@ li{
 }
 
 .circle1{
-    width: 300px;
-    height: 300px;
+    width: var(--card-height);
+    height: var(--card-height);
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.8);
+    background-color: var(--main-color);
+    opacity: 0.7;
     position: absolute;
-    bottom: 70px;
-    left: 220px;
+    bottom: calc(var(--card-height) / 4);
+    left: calc(var(--card-width) * 0.6);
     z-index: 2;
-
 }
 
 .circle2{
-    width: 300px;
-    height: 300px;
+    width: var(--card-height);
+    height: var(--card-height);
     border-radius: 50%;
-    background-color: rgba(255, 255,0,0.8);
+    background-color: var(--main-color);
+    opacity: 0.5;
     position: absolute;
-    right: -100px;
-    bottom: -120px;
+    left: calc(var(--card-width) * 0.5);
+    top: calc(var(--card-height) / 2.2);
 
 }
 
 .info{
-    padding-left: 50px;
+    padding-left: calc(var(--card-height) / 6);
 }
 
 .info > h3{
-    padding-top: 50px;
+    padding-top: calc(var(--card-height) / 6);
 } 
+
 .info > h1{
-    padding-top: 20px;
+    padding-top: calc(var(--card-height) / 8);
+    color: var(--second-color);
 } 
+
 .info > h5{
-    padding-top: 40px;
+    padding-top:calc(var(--card-height) / 7);
 } 
 
 
