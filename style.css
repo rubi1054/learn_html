@@ -1,239 +1,90 @@
-/*
-body{
-    background-color: aquamarine;
-}
-.userCardContainer{
-    width: 300px;
-    height: 420px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-}
-
-.buttonFollow{
-    width: 20ex;
-    height: 50px;
-    background-color: deepskyblue;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    background-position: center center;
-}
-
-.fullname{
-    font-size: 30px;
-}
-
-.useAbout{
-    font-size: 14px;
-}
-
-.statTitle{
-    color: red;
-    font-size: 10px;
-}
-
-.statValue{
-    color: lightblue;
-    font-size: 10px;
-}
-
-.stats{
-    background-color: black;
-}
-
-.statItem{
-    display: inline-block;
-}
-*/
-
-/*
-.card{
-width: 200px;
-height: 140px;
-background-color: pink;
-border-radius: 5px;
-position: relative;
-background: linear-gradient(to right,peachpuff, pink);
-}
-.text{
-color: white;
-font-size: 13px;
-text-transform:capitalize;
-position: absolute;
-left: 25px;
-top: 15px;
-}
-
-.numbers{
-color: white;
-font-size: 20px;
-font-weight: 500;
-position: absolute;
-left: 25px;
-top: 25px;
-}
-.info{
-color: white;
-font-size: 10px;
-position: absolute;
-left: 25px;
-top: 90px;
-}
-
-.circle1{
-width: 130px;
-height: 130px;
-background-color: rgba(255,255,255,0.3);
-border-radius: 50%;
-position:absolute;
-top: 55%;
-right: -10%;
-}
-
-.circle2{
-width: 115px;
-height: 115px;
-background-color: rgba(255,255,255,0.3);
-border-radius: 50%;
-position:absolute;
-top: -5%;
-left: 70%;
-}
-*/
-
-/*
-:root{
-    --logo-size: 200px;
-}
 *{
-    margin: 0 auto;
-}
-.card{
-    width: 400px;
-    height: 600px;
-    border: 2px solid gray;
-    border-radius: 10px;
-    background: linear-gradient(45deg,rgb(3,3,155), white);
-}
-.logo{
-    width: var(--logo-size);
-    height: var(--logo-size);
-    border-radius: 50%;
-    border: 5px solid gray;
-    background-color: lightgray;
-    margin-top: calc(var(--logo-size) / -2) ;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
-.btn{
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid gray;
-}
-.btn > img{
-    width: 25px;
-    height: 25px;
-
+:root{
+    --primary-color: #fa4a0c;
+    --second-color: #252b42;
+    --text-color: #737373;
+    --primary-size-font: 16px;
 }
 
-.btn > p{
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 10px;
+.container{
+    max-width: 1200px;
+    margin: 0;
 }
 
-.btn > * {
+.menu{
     display: inline-block;
 }
 
-.fullname{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
+.app{
+  background-image: url("./images/back1.png");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0 178px;
 }
 
-.job{
-    font-size: 20px;
-    color: gray;
-    margin-top: 30px;
+.app-text{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: white;
+}
+
+.app-title{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: white;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.app-about{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: white;
     margin-bottom: 50px;
 }
 
-.followers{
-    font-size: 18px;
-    color: gray;
-    margin-top: 40px;
+
+.btn{
+    display: inline-block;
+    border-radius: 30px;
 }
 
-* > .info{
+.btn > p {
     text-align: center;
+    color: white;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    height: 68px;
+    width: 236px;
+    padding: 18px 0px;
 }
 
-.colorBox{
-    background-color: orange;
-    width: inherit;
-    height: 200px;
-}
-*/
-
-/*
-<p class="markText"></p>
-<p class="markText"></p>
-<h3 class="markText"></h3>
-<h2 id="subtitleCard"></h2>
-
-селекторы
--типа ( p{} ) 10 points
--класса ( .markText{} ) 100 points
--id (#subtitleCard {} ) 1000 points
-
-!important 10 000 points
-*/
-
-.testClass{
-    color: coral;
+.colorBtn{
+    background-color: var(--primary-color);
+    margin-right: 35px;
 }
 
-.testClass{
-    color: chartreuse;
+.transparentBtn{
+    background: none;
+    border: 1px solid white;
 }
 
-#id1{
-    color: red;
-}
-
-p{
-    color:green;
-}
-
-ul p{
-    color: blue;
-}
-
-.textBox p{
-    color: black;
-}
-
-.markText{
-    background-color: yellow;
-}
-
-.textBox > .markText{
-    text-decoration: overline;
-    background-color: lightblue;
-}
-
-.textBox h2{
-    color: black;
-}
-
-.innerBox h2{
-    color: red !important;
-}
-
-#id2{
-    letter-spacing: 2px;
-    font-weight: bold;
-}
