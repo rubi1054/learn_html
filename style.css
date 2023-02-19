@@ -136,10 +136,16 @@ footer > p{
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 420px;
+    height: 470px;
     background-color: white;
     color: black;
     border-radius: 10px;
+ }
+
+ .buttonFollow > p{
+    text-align: center;
+    padding: 0;
+    margin: 6px;
  }
 
  .buttonFollow{
@@ -148,7 +154,7 @@ footer > p{
     background-color: deepskyblue;
     font-size: bold;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 10px;vertical-align: middle;
  }
 
  .fullname{
@@ -187,6 +193,7 @@ footer > p{
  }
 
  .stats{
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -195,8 +202,7 @@ footer > p{
 
  .statItem{
     border: 1px solid white;
-    background-color: lightblue;
-    flex-basis: 30%;
+    flex-basis: 33%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -205,4 +211,12 @@ footer > p{
  .statInfo{
     display: flex;
     flex-direction: column;
+ }
+
+ .statItem > i{
+    color: red;
+ }
+
+ .statItem + .statItem{
+    border-left: 2px solid gray;
  }
