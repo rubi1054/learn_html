@@ -1,3 +1,4 @@
+/*
 *{
     margin: 0;
     padding: 0;
@@ -109,12 +110,99 @@
 }
 
 footer > div{
+    display: inline-block;
     position: relative;
-    left: 200px;
+    left: 206px;
+    top: 31px;
 }
 
 footer > p{
     display: inline-block;
     position: relative;
-    left: 200px;
+    left: 684px;
+    top: -8px;
+    margin-bottom: 54px;
 }
+*/
+
+ body{
+    background-color: aquamarine;
+ }
+
+ .userCardContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+ }
+
+ .buttonFollow{
+    width: 150px;
+    height: 40px;
+    background-color: deepskyblue;
+    font-size: bold;
+    text-align: center;
+    border-radius: 10px;
+ }
+
+ .fullname{
+    font-size: 30px;
+ }
+
+ .userAbout{
+    font-size: 14px;
+ }
+
+ .statTitle{
+    color: red;
+    font-size: 10px;
+ }
+
+ .statValue{
+    color: black;
+    font-size: 10px;
+ }
+
+ .userPhoto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background-image: url("https://people.com/thmb/NwJzLwy5IvwRLgvTFGK_4fvC1SY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x305:1001x307)/Margot-Robbie-011723-2000-f45fe72c86f24029ae2215b399356460.jpg");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 150%;
+ }
+
+ .userInfo > p{
+    text-align: center;
+ }
+
+ .stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .statItem{
+    border: 1px solid white;
+    background-color: lightblue;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .statInfo{
+    display: flex;
+    flex-direction: column;
+ }
