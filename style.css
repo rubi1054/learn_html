@@ -5,7 +5,7 @@
 @font-face{
     font-family: Akrobat;
     font-display: swap;
-    src: url("../fonts/") format("woff");
+    src: url("./fonts/Akrobat-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
 @font-face{
     font-family: Akrobat;
     font-display: swap;
-    src: url("../fonts/") format("woff");
+    src: url("./fonts/Akrobat-ExtraBold.woff") format("woff");
     font-weight: 800;
     font-style: normal;
 }
@@ -37,6 +37,11 @@ header{
     align-items: center;
     justify-content: flex-end;
     position: relative;
+    z-index: 2;;
+}
+
+.menu .item-select a{
+    color: #fe0002;
 }
 
 .summon-menu{
@@ -76,7 +81,7 @@ header{
 
 .red-block a{
   font-weight: 800;
-  font-weight: 20px;
+  font-size: 20px;
   line-height: 25px;
   text-align: center;
   color:white;  
@@ -133,20 +138,24 @@ main{
     position: relative;
 }
 
-.lot-icons{
-    margin: 0px 92px 0px 0px;
-}
 .lot-icons li{
     margin-bottom: 18px;
 }
 
-.icon{}
-
 .rb{
-    margin: 29px 65px 0px 0px;
+    margin-top: 29px;
+    margin-left: 117px; /*97px;*/
+    margin-right: 66px;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
+
+.rb img{
+
+}
+
 .more-block h4{
     width: 459px;
     font-weight: 600;
@@ -155,6 +164,7 @@ main{
     color: #000000;
     margin: 66px 0px 0px 0px;
     position: relative;
+    z-index: 1;
 }
 
 .unicorn{
@@ -164,6 +174,7 @@ main{
     margin-bottom: 40px;
     margin-top: auto;
     margin-right: 40px;
+    z-index: 5;
 }
 
 .img-unicorn{
@@ -218,5 +229,16 @@ main{
     width: 198px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  /*yellow background*/
+
+  .yellow-back{
+    top: -120px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 120px);
+    left: 282px;
+    background-color:#FFEA2F;
   }
 
