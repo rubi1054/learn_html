@@ -1,7 +1,8 @@
+
 /*Обнуление*/
 *{padding:0;margin:0;border:0;}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}:focus,:active{outline:none;}a:focus,a:active{outline:none;}nav,footer,header,aside{display:block;}html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}input,button,textarea{font-family:inherit;}input::-ms-clear{display:none;}button{cursor:pointer;}button::-moz-focus-inner{padding:0;border:0;}a,a:visited{text-decoration:none;}a:hover{text-decoration:none;}ul li{list-style:none;}img{vertical-align:top;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
-
+/*
 @font-face{
     font-family: Akrobat;
     font-display: swap;
@@ -87,11 +88,7 @@ header{
   color:white;  
 }
 
-/*
-.inner-menu li{
-    margin-right: 30px;
-}
-*/
+
 
 .inner-menu a{
     text-decoration: none;
@@ -102,10 +99,10 @@ header{
     color: black;
 }
 
-/*main*/
+
 
 main{
-    /*height: 911px;*/
+   
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -144,7 +141,7 @@ main{
 
 .rb{
     margin-top: 29px;
-    margin-left: 117px; /*97px;*/
+    margin-left: 117px; 
     margin-right: 66px;
     position: relative;
     z-index: 1;
@@ -182,7 +179,7 @@ main{
     height: auto;
 }
 
-/*footer*/
+
 
 .bk-line{
     height: 77px;
@@ -231,7 +228,6 @@ main{
     align-items: center;
   }
 
-  /*yellow background*/
 
   .yellow-back{
     top: -120px;
@@ -241,4 +237,59 @@ main{
     left: 282px;
     background-color:#FFEA2F;
   }
+*/
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .part{
+    width: 300px;
+    height: 200px;
+    transition: 2s;
+}
+
+.container .card .part.part1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lawngreen;
+    transform: translateY(100px);
+}
+
+.container .card .part.part2{
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-100px);
+}
+
+.btn{
+    border: 2px solid white;
+}
+
+.container .card:hover .part.part2{
+    transform: translateY(0);
+}
+
+.container .card:hover .part.part1{
+    transform: translateY(0);
+    background-color: hotpink;
+}
+
+.part1 i {
+    width: 100px;
+    height: 100px;
+}
